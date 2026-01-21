@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Discount Example</title>
+</head>
+<body>
+
+<h2>Product Discount Calculation</h2>
+
+<button onclick="processProducts()">Process Products</button>
+
+<pre id="output"></pre>
+
+<script>
+    const products = [
+        { name: "Laptop", price: 50000 },
+        { name: "Mobile", price: 25000 },
+        { name: "Headphones", price: 1800 },
+        { name: "Keyboard", price: 2200 },
+        { name: "Mouse", price: 1200 }
+    ];
+    function applyDiscount(items) {
+        return items.map(item => ({
+            ...item,
+            discountedPrice: item.price - (item.price * 0.10)
+        }));
+    }
+    function filterExpensiveItems(items) {
+        return items.filter(item => item.discountedPrice > 2000);
+    }
+    function calculateTotal(items) {
+        return items.reduce((total, item) => total + item.discountedPrice, 0);
+    }
+    function processProducts() {
+        const discountedProducts = applyDiscount(products);
+        const filteredProducts = filterExpensiveItems(discountedProducts);
+        const totalPrice = calculateTotal(filteredProducts);
+
+        let result = "Discounted Products:\n";
+        result += JSON.stringify(discountedProducts, null, 2);
+
+        result += "\n\nFiltered Products (Discounted Price > 2000):\n";
+        result += JSON.stringify(filteredProducts, null, 2);
+
+        result += "\n\nTotal Price of Filtered Products:\n";
+        result += totalPrice;
+
+        document.getElementById("output").textContent = result;
+    }
+</script>
+</body>
+</html>

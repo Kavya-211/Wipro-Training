@@ -1,0 +1,59 @@
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  width: 240px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* HEADER STYLE */
+.header {
+  height: 80px;
+  background: rgb(34, 195, 95);
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 30px;
+}
+
+/* LEFT LOGO */
+.header-left {
+  position: absolute;
+  left: 30px;
+}
+
+.shop-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CENTER EZSHOP */
+.header-center {
+  margin: 0 auto;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}

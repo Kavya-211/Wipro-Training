@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ogani - Organic Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background: #f5f5f5;
+            font-size: 14px;
+            padding: 8px 0;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #7fad39;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: #000 !important;
+            margin: 0 10px;
+        }
+
+        .nav-link.active {
+            color: #7fad39 !important;
+        }
+
+        .departments {
+            background: #7fad39;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        .category-list li {
+            list-style: none;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .search-btn {
+            background: #7fad39;
+            color: white;
+        }
+
+        .hero {
+            background: url(https://media.istockphoto.com/id/836205372/photo/assortment-of-healthy-protein-source-and-body-building-food.jpg?s=612x612&w=0&k=20&c=RZI0KcNAfSviDO8ZfYfBySN_97XqgM-Z8es1eSD2Z0Q=) no-repeat center;
+            background-size: cover;
+            padding: 50px;
+            min-height: 300px;
+        }
+
+        .btn-green {
+            background: #7fad39;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-green:hover {
+            background: #6c9c32;
+            color: white;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <i class="fa fa-envelope"></i> ogani@fresh.com
+            <span class="ms-3">Free Shipping for all Order of Rs.99</span>
+        </div>
+        <div>
+            <i class="fab fa-facebook-f me-2"></i>
+            <i class="fab fa-twitter me-2"></i>
+            <i class="fab fa-linkedin-in me-2"></i>
+            <i class="fab fa-pinterest-p"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="container py-3">
+    <div class="row align-items-center">
+        <div class="col-md-3 logo">OGANI</div>
+
+        <div class="col-md-6">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 text-end">
+            <i class="fa fa-heart me-3"></i>
+            <i class="fa fa-shopping-bag"></i>
+            <span class="ms-2">Rs.200</span>
+        </div>
+    </div>
+</div>
+
+<!-- Search Section -->
+<div class="container my-3">
+    <div class="row align-items-center">
+        <div class="col-md-3">
+            <div class="departments">
+                <i class="fa fa-bars"></i> All Departments
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="input-group">
+                <select class="form-select" style="max-width:200px;">
+                    <option>All Categories</option>
+                    <option>Vegetables</option>
+                    <option>Fruits</option>
+                </select>
+                <input type="text" class="form-control" placeholder="What do you need?">
+                <button class="btn search-btn">SEARCH</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Section -->
+<div class="container">
+    <div class="row">
+
+        <!-- Categories -->
+        <div class="col-md-3">
+            <ul class="category-list p-3 bg-white">
+                <li>Fresh Meat</li>
+                <li>Vegetables</li>
+                <li>Fruits</li>
+                <li>Fresh Berries</li>
+                <li>Ocean Foods</li>
+                <li>Butter & Eggs</li>
+                <li>Nuts</li>
+            </ul>
+        </div>
+
+        <!-- Hero -->
+        <div class="col-md-9 hero text-white">
+            <p class="fw-bold text-success">FRUIT FRESH</p>
+            <h1>Vegetable<br>100% Organic</h1>
+            <p>Free Pickup and Delivery Available</p>
+            <a href="shop.html" class="btn-green">SHOP NOW</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container my-5">
+    <div class="row text-center g-4">
+
+        <div class="col-md-3">
+            <div class="card feature-card shadow-sm">
+                <div class="card-body">
+                    <i class="fa fa-truck fa-3x text-success mb-3"></i>
+                    <h5>Free Shipping</h5>
+                    <p>Free delivery on all orders above Rs.99.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card feature-card shadow-sm">
+                <div class="card-body">
+                    <i class="fa fa-leaf fa-3x text-success mb-3"></i>
+                    <h5>100% Organic</h5>
+                    <p>Healthy organic food directly from farmers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card feature-card shadow-sm">
+                <div class="card-body">
+                    <i class="fa fa-headset fa-3x text-success mb-3"></i>
+                    <h5>24/7 Support</h5>
+                    <p>Customer support available anytime.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card feature-card shadow-sm">
+                <div class="card-body">
+                    <i class="fa fa-credit-card fa-3x text-success mb-3"></i>
+                    <h5>Secure Payment</h5>
+                    <p>Safe and secure online payment methods.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
