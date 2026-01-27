@@ -1,0 +1,22 @@
+{
+  "vegetables": [
+    { "id": 1, "name": "Tomato", "price": 40, "image": "/images/Tomato.jpg", "stock": 50 },
+    { "id": 2, "name": "Potato", "price": 30, "image": "/images/Potato.jpg", "stock": 100 },
+    { "id": 3, "name": "Carrot", "price": 60, "image": "/images/Carrot.jpg", "stock": 40 },
+    { "id": 4, "name": "Capsicum", "price": 70, "image": "/images/Capsicum.jpg", "stock": 35 },
+    { "id": 5, "name": "Brinjal", "price": 40, "image": "/images/Brinjal.jpg", "stock": 45 },
+    { "id": 6, "name": "Cucumber", "price": 50, "image": "/images/Cucumber.jpg", "stock": 60 },
+    { "id": 7, "name": "BitterGourd", "price": 60, "image": "/images/BitterGuourd.jpg", "stock": 25 },
+    { "id": 8, "name": "Ladyfinger", "price": 40, "image": "/images/Ladyginger.jpg", "stock": 70 },
+    { "id": 9, "name": "Broccoli", "price": 90, "image": "/images/Broccoli.jpg", "stock": 20 },
+    { "id": 10, "name": "Onion", "price": 35, "image": "/images/Onion.jpg", "stock": 80 },
+    { "id": 11, "name": "GreenChilli", "price": 35, "image": "/images/Greenchilli.jpg", "stock": 55 },
+    { "id": 12, "name": "Cabbage", "price": 35, "image": "/images/Cabbage.jpg", "stock": 30 }
+  ],
+
+  "storeInfo": {
+    "name": "VeggieMart",
+    "location": "India",
+    "contact": "+91 9876543210"
+  }
+}

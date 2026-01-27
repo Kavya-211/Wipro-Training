@@ -1,0 +1,38 @@
+/* Main container */
+.container-div {
+  @apply min-h-screen flex items-center justify-center bg-gray-100;
+}
+
+/* Card */
+.container-div form {
+  @apply w-full max-w-md bg-white p-6 rounded-lg shadow-lg;
+}
+
+/* Heading */
+.container-div h2 {
+  @apply text-2xl font-semibold text-center mb-6;
+}
+
+/* Form groups */
+.container-div div {
+  @apply mb-4;
+}
+
+/* Labels */
+.container-div label {
+  @apply block font-medium mb-1;
+}
+
+/* Input fields */
+.container-div input {
+  @apply w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Error messages */
+.container-div span {
+  @apply text-red-500 text-sm mt-1;
+}
+
+/* Submit button */
+.container-div button {
+  @apply w-full bg-blue-600 text-white py-2 rounded-m

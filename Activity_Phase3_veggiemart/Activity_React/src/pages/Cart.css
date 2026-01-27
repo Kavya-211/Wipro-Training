@@ -1,0 +1,127 @@
+.cart-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.cart-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.empty-cart {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-details {
+  flex: 2;
+  padding-left: 15px;
+}
+
+.cart-qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-qty button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-subtotal {
+  font-weight: bold;
+  width: 80px;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  background: orange;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* Quantity button container */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* less gap */
+}
+
+/* + and - buttons */
+.qty-btn {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: white;
+  border: none;
+  width: 26px;      /* fixed small width */
+  height: 26px;     /* fixed small height */
+  font-size: 14px;  /* smaller icon */
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;       /* remove extra padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.qty-btn:hover {
+  transform: scale(1.08);
+  background: #166534;
+}
+
+/* Click effect */
+.qty-btn:active {
+  transform: scale(0.92);
+}
+
+/* Quantity number */
+.qty {
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}

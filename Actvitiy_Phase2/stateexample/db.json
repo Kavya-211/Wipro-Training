@@ -1,0 +1,13 @@
+{
+    "courses":[
+        {
+            "id":1,
+            "name":"30 days"
+        },
+        {
+            "id":2,
+            "name":"python",
+            "duration":"45 days"
+        }
+    ]
+}
