@@ -1,0 +1,44 @@
+.veg-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.veg-card:hover {
+  transform: translateY(-6px);
+}
+
+.veg-image {
+  width: 100%;
+  height: 180px;        /* 🔥 FIXED HEIGHT */
+  object-fit: contain;  /* 🔥 SHOW FULL IMAGE */
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.veg-name {
+  margin: 12px 0 5px;
+  font-size: 18px;
+}
+
+.veg-price {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #16a34a;
+}
