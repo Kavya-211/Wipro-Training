@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+</head>
+<body>
+
+  <h2>User Name: <%= user %></h2>
+  <h2>Role: <%= role %></h2>
+
+  <ul>
+    <% kpas.forEach(skill => { %>
+      <li><%= skill %></li>
+    <% }) %>
+  </ul>
+
+</body>
+</html>
