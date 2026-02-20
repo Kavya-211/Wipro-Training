@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Students per Course</title></head>
+<body>
+<h2>Total Students per Course</h2>
+<ul>
+  <% report.forEach(r => { %>
+    <li><%= r.title %> : <%= r.dataValues.studentCount %> students</li>
+  <% }) %>
+</ul>
+</body>
+</html>

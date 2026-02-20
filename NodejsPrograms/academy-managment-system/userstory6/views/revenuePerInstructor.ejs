@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Revenue per Instructor</title></head>
+<body>
+<h2>Total Revenue per Instructor</h2>
+<ul>
+  <% report.forEach(r => { %>
+    <li><%= r.name %> : $<%= r.dataValues.totalRevenue %></li>
+  <% }) %>
+</ul>
+</body>
+</html>

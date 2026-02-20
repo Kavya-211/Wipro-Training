@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students Page <%= page %></title>
+</head>
+<body>
+  <h2>Students - Page <%= page %></h2>
+  <ul>
+    <% students.forEach(student => { %>
+      <li><%= student.name %></li>
+    <% }) %>
+  </ul>
+
+  <div>
+    <a href="/students?page=<%= page - 1 %>">Previous</a> |
+    <a href="/students?page=<%= page + 1 %>">Next</a>
+  </div>
+</body>
+</html>
