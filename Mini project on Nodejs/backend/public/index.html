@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Node Backend UI</title>
+</head>
+<body>
+  <h2>Backend UI</h2>
+
+  <button onclick="healthCheck()">Health Check</button>
+  <button onclick="loginUser()">Login User</button>
+  <button onclick="viewUsers()">View Users</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    function healthCheck() {
+      fetch("/health")
+        .then(res => res.json())
+        .then(data => show(data));
+    }
+
+    function loginUser() {
+      fetch("/login", { method: "POST" })
+        .then(res => res.json())
+        .then(data => show(data));
+    }
+
+    function viewUsers() {
+      fetch("/users")
+        .then(res => res.json())
+        .then(data => show(data));
+    }
+
+    function show(data) {
+      document.getElementById("output").textContent =
+        JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
