@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "strict": false,
+    "outDir": "./"
+  },
+  "include": ["productManager.ts"]
+}
+
