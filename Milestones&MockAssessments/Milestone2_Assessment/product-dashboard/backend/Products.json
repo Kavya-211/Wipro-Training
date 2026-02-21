@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 60000,
+    "category": "Electronics",
+    "description": "High performance laptop",
+    "image": "https://picsum.photos/200?1"
+  },
+  {
+    "id": 2,
+    "name": "Shoes",
+    "price": 2000,
+    "category": "Fashion",
+    "description": "Comfortable running shoes",
+    "image": "https://picsum.photos/200?2"
+  }
+]

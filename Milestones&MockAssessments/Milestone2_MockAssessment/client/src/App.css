@@ -1,0 +1,17 @@
+.container {
+  width: 400px;
+  margin: auto;
+  font-family: Arial;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+}
